@@ -9,6 +9,7 @@ Domain: Healthcare
 Open the project folder in VS Code.
 
 git clone https://github.com/VHrishita/PharmEasy-Healthcare-Decision-Intelligence.git
+
 cd PharmEasy-Healthcare-Decision-Intelligence
 
 ### 2. Create and activate a virtual environment
