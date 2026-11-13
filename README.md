@@ -8,6 +8,9 @@ Domain: Healthcare
 
 Open the project folder in VS Code.
 
+git clone https://github.com/VHrishita/PharmEasy-Healthcare-Decision-Intelligence.git
+cd PharmEasy-Healthcare-Decision-Intelligence
+
 ### 2. Create and activate a virtual environment
 
 ```bash
@@ -322,7 +325,7 @@ The total RNN parameter count, including biases, is 26,768.
 
 The parameter count does not increase with sequence length because the same weight matrices are reused at every time step.
 
-For a 10-class output, ReLU can be used in hidden layers, while softmax with categorical cross-entropy is suitable for the output layer.
+For a 10-class classification task, ReLU can be used in the hidden layers, with softmax and categorical cross-entropy at the output. For the 16-class RNN, the output softmax should cover all 16 classes.
 
 In a very deep plain neural network, gradients can become extremely small as they travel backwards through many layers, making early layers learn very slowly. Skip connections provide an alternative path for information and gradients, helping deeper networks train more effectively.
 
